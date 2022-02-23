@@ -48,8 +48,8 @@ header h3 {
 }
 
 .box {
-  max-width: 360px;
-  max-height: 240px;
+  /* max-width: 360px;
+  max-height: 240px; */
   background-color: #fff;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -103,9 +103,29 @@ header h3 {
   align-self: center;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 750px) {
   .main {
     grid-template-columns: 1fr;
-    justify-items: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    font-size: 13px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 20px;
+  }
+
+  .box {
+    padding: 20px;
+  }
+
+  .box-text {
+    padding-bottom: 30px;
   }
 }
